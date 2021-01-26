@@ -76,11 +76,34 @@ echo "<br><br>";
 
 echo "8.Les mois depuis le début de l'année : <br>";
 
+$mois = [
+    "janvier",
+    "fevrier",
+    "mars",
+    "avril",
+    "mai",
+    "juin",
+    "juillet",
+    "aoùt",
+    "septembre",
+    "octobre",
+    "novembre",
+    "decembre",
+];
 
+foreach($mois as $item){
+    echo $item."<br>";
+}
+echo "<br><br>";
 
 //Afficher les mois de la fin de l'année jusqu'au début de l'année
 //Modifier et/ou remplacer les éléments ci-dessous
 
 echo "9.Les mois depuis la fin de l'année : <br>";
+
+$num = count($mois);
+for ($i = $num - 1; $i >= 0; --$i) {
+    echo $mois[$i] . "<br>";
+}
 
 

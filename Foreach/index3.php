@@ -37,8 +37,26 @@ $videotheque = array(
     ),
 );
 
-echo '12.Mes films : <br>';
+echo '12.Mes films : <br><br>';
 //ajoutez votre code ici
+
+foreach ($videotheque as $films){
+    echo $films["nom"]."<br>";
+}
+echo "<br><br>";
+
+echo "details des films :<br>";
+
+foreach($videotheque as $films){
+        echo "<br>";
+        echo "TITRE : ".$films["nom"]."<br>".
+            "DATE :".$films["date"]."<br>".
+            "REALISATEUR :".$films["realisateur"]."<br>";
+}
+
+
+
+
 
 
 //----------------------------------------
@@ -46,7 +64,7 @@ echo '12.Mes films : <br>';
 //reprenez le tableau ci-dessus, ajoutez-y 3 de vos films préférés avec les mêmes
 //informations (nom, date, realisateur, acteurs) et en plus de ces informations
 //rajoutez un synopsis
-
+echo "<br><br>";
 echo '13.Mes films : <br>';
 //ajoutez votre code ici
 
